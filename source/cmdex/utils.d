@@ -1,6 +1,6 @@
-module commandr.utils;
+module cmdex.utils;
 
-import commandr;
+import cmdex;
 import std.array : array;
 import std.algorithm : find, map, levenshteinDistance;
 import std.typecons : Tuple, Nullable;

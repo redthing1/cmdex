@@ -1,7 +1,7 @@
 /**
  * Program data model
  *
- * This module along with `commandr.option` contains all types needed to build
+ * This module along with `cmdex.option` contains all types needed to build
  * your program model - program options, flags, arguments and all subcommands.
  *
  * After creating your program model, you can use it to:
@@ -27,10 +27,10 @@
  * See_Also:
  *   `Command`, `Program`, `parse`
  */
-module commandr.program;
+module cmdex.program;
 
-import commandr.option;
-import commandr.utils;
+import cmdex.option;
+import cmdex.utils;
 import std.algorithm : all, reverse, map, filter;
 import std.ascii : isAlphaNum;
 import std.array : array;
@@ -792,7 +792,7 @@ unittest {
 // flags
 unittest {
     import std.exception : assertThrown;
-    import commandr.validators;
+    import cmdex.validators;
 
     assertThrown!InvalidProgramException(
         new Program("test")
@@ -816,7 +816,7 @@ unittest {
 // default command
 unittest {
     import std.exception : assertThrown, assertNotThrown;
-    import commandr.validators;
+    import cmdex.validators;
 
     assertThrown!InvalidProgramException(
         new Program("test")
@@ -840,7 +840,7 @@ unittest {
 // topics
 unittest {
     import std.exception : assertThrown, assertNotThrown;
-    import commandr.validators;
+    import cmdex.validators;
 
     auto p = new Program("test")
             .add(new Command("a", "desc"))

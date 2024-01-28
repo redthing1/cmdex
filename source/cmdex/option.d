@@ -15,10 +15,10 @@
  * See_Also:
  *  Flag, Option, Argument
  */
-module commandr.option;
+module cmdex.option;
 
-import commandr.validators;
-import commandr.program : InvalidProgramException;
+import cmdex.validators;
+import cmdex.program : InvalidProgramException;
 
 
 /**

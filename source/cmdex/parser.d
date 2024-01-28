@@ -4,13 +4,13 @@
  * See_Also:
  *  parse, parseArgs
  */
-module commandr.parser;
+module cmdex.parser;
 
-import commandr.program;
-import commandr.option;
-import commandr.args;
-import commandr.help;
-import commandr.utils;
+import cmdex.program;
+import cmdex.option;
+import cmdex.args;
+import cmdex.help;
+import cmdex.utils;
 
 import std.algorithm : canFind, count, each;
 import std.stdio : writeln, writefln, stderr;

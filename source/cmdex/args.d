@@ -41,9 +41,9 @@
  * See_Also:
  *  ProgramArgs
  */
-module commandr.args;
+module cmdex.args;
 
-import commandr.program;
+import cmdex.program;
 
 
 /**

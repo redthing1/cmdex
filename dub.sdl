@@ -1,0 +1,5 @@
+name "cmdex"
+authors "redthing1" "Robert Pasiński"
+description "Modern command line argument parser"
+copyright "Copyright © 2019, Robert Pasiński, Copyright © 2024, redthing1"
+license "MIT"

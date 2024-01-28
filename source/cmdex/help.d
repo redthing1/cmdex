@@ -1,7 +1,7 @@
-module commandr.help;
+module cmdex.help;
 
-import commandr.program;
-import commandr.option;
+import cmdex.program;
+import cmdex.option;
 import std.algorithm : filter, map, any, chunkBy;
 import std.array : join, array;
 import std.conv : to;
